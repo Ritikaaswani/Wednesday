@@ -1,3 +1,32 @@
+@font-face {
+    font-family: dm;
+    src: url(./DMSans-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: Neuton ;
+    src: url(./Neuton-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Neuton ;
+    src: url(./Neuton-ExtraBold.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: Neuton ;
+    src: url(./Neuton-ExtraLight.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Neuton ;
+    src: url(./Neuton-Light.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Neuton ;
+    src: url(./Neuton-Regular.ttf);
+    font-weight: 500;
+}
 
 *{
     margin: 0;
@@ -41,24 +70,24 @@ html,body{
     gap: 17px;
 }
 #navpart-2 h4{
-    font-family: gilroy;
+    font-family: dm;
     font-weight: 400;
     font-size: 16px;
     cursor: pointer;
-    transition: all ease 0.4s;
+    /* transition: all ease 0.4s; */
 }
 #navpart-2 h4:hover{
     color: #FF5858;
 }
 #navpart-3 h4{
-    font-family: gilroy ;
+    font-family: dm ;
     font-weight: 400;
     font-size: 16px;
     cursor: pointer;
 }
 #navpart-3 h4:nth-child(2){
     color: #FF5858;
-    transition: all ease 0.4s;
+    /* transition: all ease 0.4s; */
 }
 #navpart-3 h4:nth-child(3){
     background-color: black;
@@ -95,7 +124,7 @@ html,body{
     color: #FF5858;
 }
 #center p{
-    font-family: gilroy;
+    font-family: dm;
     line-height: 27px;
     font-size: 18px;
     padding-top: 30px;
@@ -105,4 +134,78 @@ html,body{
    margin-left: 7.5vw;
    margin-top: 60px;
    height: 115vh;
+   border-bottom: 1px solid black;
 }
+#page2{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    margin-top: 7%;
+}
+#page2 h1{
+    font-size: 50px;
+    font-family: Neuton;
+    color: #151B31;
+    letter-spacing: 1.14px;
+}
+#page2 p{
+    margin-top: 1.5%;
+    font-family: dm;
+    color: #8D8D90;
+    font-size: 16px;
+    line-height: 24px;
+}
+#page2 #center{
+    height: 150vh;
+    width: 100vw;
+    /* background-color: #FF5858; */
+    display: flex;
+    flex-wrap: wrap;
+   gap: 60px;
+    justify-content: center;
+    
+}
+.elem{
+    height: 500px;
+        width: 400px;
+    /* background-color: #FFB07B; */
+    padding-top: 0.4%;
+    border-radius: 6px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    position: relative;
+   
+}
+.elem i{
+  
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    display: none;
+}
+.elem:hover i{
+    display: block;
+}
+.elem img{
+    height: 85%;
+    width: 97%;
+    border: 1px solid #151B31;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0 1px #151B31 ;
+}
+.elem h2{
+    padding-top: 10px;
+    font-family: Neuton;
+    font-size: 32px;
+}
+.elem:hover{
+    background-color: #FFB07B;
+
+}
+.elem:hover img{
+    filter: grayscale(1);
+}
+    
