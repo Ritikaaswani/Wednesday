@@ -211,35 +211,116 @@ html,body{
 .elem:hover img{
     filter: grayscale(1);
 }
- /* #page1 #b{
+ #page1 #b{
     height: 35px;
     width: 35px;
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    border: none;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
 
  }
  #page1 #c{
-    height: 35px;
-    width: 35px;
-    
-    top: 10%;
-
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 5%;
+    left: 26%;
+    border: none;
+    animation-name: move1 ;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
  }
  #page1 #d{
-    height: 35px;
-    width: 35px;   
-     
-
+    height: 190px;
+    width: 100px;   
+    position: absolute;
+    top: 23%;
+    left: 18%;
+    border: none;
+    animation-name: move2 ;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
  }
  #page1 #e{
-    height: 35px;
-    width: 35px;
-    
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 10%;
+    left: 63%;
+    border: none;
+    animation-name: move1 ;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
 
  }
  #page1 #f{
-    height: 35px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 28%;
+    left: 75%;
+    border: none;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
    
- } */
+ }
+ @keyframes move {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(60%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+ }
+ @keyframes move1 {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-70%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+    
+ }
+ @keyframes move2 {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-25%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+    
+ }
  #page1 #menu{
     font-size: 18px;
     display: none;
@@ -631,6 +712,8 @@ html,body{
     box-shadow: 2px 2px #151B31;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
    
 }
 #icon1{
