@@ -222,7 +222,7 @@ menu.addEventListener("click",function(){
     fullscr.style.left="0"
 })
 close.addEventListener("click",function(){
-    fullscr.style.left="-70%"
+    fullscr.style.left="-70vw"
 })
 
   
