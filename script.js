@@ -175,7 +175,7 @@ tl4.from("#page5 h1, #page5 p",{
     opacity:0,
     scale:0.7,
     stagger:0.2,
-    duration:0.3,
+    duration:0.4,
    scrollTrigger : {
     trigger: "#page5 h1, #page5 p" ,
     scroller:"#main",
@@ -189,7 +189,7 @@ tl4.from("#mid .ele",{
     y: 30,
     opacity:0,
     scale:0.8,
-    duration:0.3,
+    duration:0.4,
     scrollTrigger:{
      trigger: "#mid .ele" ,
      scroller: "#main",
