@@ -67,8 +67,8 @@ var tl2=gsap.timeline({
 })
 tl2.from("#page2 h1",{
     y:30,
-    opaacity:0,
-   duration:0.3
+    opacity:0,
+   duration:0.4
 })
 .from("#page2 p",{
     y:30,
@@ -203,7 +203,7 @@ tl4.from("#mid .ele",{
 tl4.from("#page6 #box",{
     x:-200,
     opacity:0,
-    duration:0.17,
+    duration:0.3,
     scale:0.9,
     scrollTrigger:{
         trigger: "#box" ,
@@ -215,5 +215,15 @@ tl4.from("#page6 #box",{
        }
 
 })
+var menu=document.querySelector("#menu")
+var fullscr= document.querySelector("#fullscr")
+var close = document.querySelector("#close")
+menu.addEventListener("click",function(){
+    fullscr.style.left="0"
+})
+close.addEventListener("click",function(){
+    fullscr.style.left="-70%"
+})
+
   
   
