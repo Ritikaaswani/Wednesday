@@ -54,7 +54,7 @@ html,body{
     width: 70vw;
     background-color: #fff;
    position: absolute;
-   left: -70vw;
+   left: -100vw;
    z-index: 99;
    transition: all ease 0.5s;
     
